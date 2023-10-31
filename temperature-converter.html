@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="temperature-converter.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://kit.fontawesome.com/6b2f644feb.js" crossorigin="anonymous"></script>
+        <title>Temperature Converter</title>
+    </head>
+    <body>
+        <div class="first-part">
+            <div class="white-container shadow">
+                <h1 class="white-container-main-heading">Temperature Converter</h1>
+                <div class="white-container-form-container">
+                    <div class="white-container-small-container">
+                        <div class="small-container-items">
+                            <label for="degreesInput" class="white-container-small-container-main-heading">Degrees</label><br/>
+                            <input name="degreesInput" class="degrees-input" id="typeInput1"/>
+                        </div>
+                        <div class="small-container-items">
+                            <label for="typeInput" class="white-container-small-container-main-heading">Type</label><br/>
+                            <select id="typeInput2" name="typeInput" class="degrees-input">
+                                <option value="fahrenheit" selected>Fahrenheit</option>
+                                <option value="celsius">Celsius</option>
+                                <option value="kelvin">Kelvin</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="white-container-other-container">
+                        <label for="result" class="white-container-small-container-main-heading">Result</label><br/>
+                        <input name="result" id="result" class="degrees-input1"/>
+                    </div>
+                    <button class="btn btn-primary convert-buttom" id="converterButton" onclick="resultShowing()">Convert</button>
+                </div>
+            </div>
+        </div>
+        <script src="temperature-converter.js"></script>
+    </body>
+</html>
